@@ -25,8 +25,7 @@ const testUtils = {
     }),
 
     compareCreateText: utils.effect(model => {
-        return session
-            .findByName('Create-text')
+        return matcher.get(session, 'Create-text')
             .then(elem => elem.getProperty('value'))
             .then(value => {
                 assert.ok(
@@ -64,8 +63,7 @@ let actions = Immutable.List([
         },
 
         setup: (model, fixtures) => {
-            return session
-                .findByName('Create-text')
+            return matcher.get(session, 'Create-text')
                 .then(elem => elem.type(fixtures.get('text')))
                 .then(() => model.set('createText', fixtures.get('text')));
         },
@@ -73,8 +71,7 @@ let actions = Immutable.List([
         assert: testUtils.compareCreateText,
 
         teardown: model => {
-            return session
-                .findByName('Create-text')
+            return matcher.get(session, 'Create-text')
                 .then(elem => elem.clearValue())
                 .then(() => model.set('createText', ''));
         },
