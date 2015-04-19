@@ -93,7 +93,7 @@ The dependencies of the actions that make up your test suite form a graph. When 
 
 - walks the graph to find all the dependencies up to the root(s) of the graph
 - deduplicates the list to figure what actions it must run in what order
-- resolves the actions' [fixtures][#Fixtures]
+- resolves the actions' [fixtures](#fixtures)
 - runs forward from the first dependency to the target action
 
 In the dependency list, *order is important*. Dependencies should be listed left-to-right in order of priority.
