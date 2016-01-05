@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "babel": "^5.8.23",
-    "babel-runtime": "^5.8.20",
+    "babel-runtime": "^6.1.18",
     "chalk": "^1.0.0",
     "fnkit": "^1.0.1",
     "immutable": "^3.7.3",
