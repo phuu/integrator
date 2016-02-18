@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/phuu/integrator",
   "devDependencies": {
-    "ava": "^0.11.0",
+    "ava": "^0.12.0",
     "babel-cli": "^6.4.5",
     "babel-core": "^6.4.5",
     "babel-eslint": "^4.1.6",
