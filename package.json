@@ -42,7 +42,7 @@
     "eslint": "^1.6.0",
     "ghooks": "^1.0.1",
     "nodemon": "^1.3.7",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^6.3.2"
   },
   "dependencies": {
     "action-graph": "^1.3.0",
